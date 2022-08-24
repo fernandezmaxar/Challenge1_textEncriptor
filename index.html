@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo de Alura" class="logo" />
+      </a>
+    </header>
+
+    <main>
+      <section class="entrada">
+        <textarea name="textarea" class="espacio_entrada" placeholder="Ingrese texto aquí" autofocus></textarea>
+
+        <div class="alerta">
+          <img src="img/alerta.png" alt="alerta-icono" class="alerta_icono" />
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+
+        <div class="botones">
+          <button class="encriptar mi_boton" id="encriptarBtn">Encriptar</button>
+          <button class="desencriptar mi_boton" id="desencriptarBtn">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="espacio_salida" id="salida">
+        <figure id="img_principal">
+          <img src="img/img_principal.png" alt="niño-diamante-lupa" class="ninio_img" />
+          <figcaption>
+            <p>No se encontró ningún mensaje.</p>
+            <p>Por favor, inserte el texto que desea cifrar o descifrar.</p>
+          </figcaption>
+        </figure>
+        <button class="copiar mi_boton">Copiar</button>
+      </section>
+    </main>
+
+    <footer><a href="https://github.com/fernandezmaxar">
+      <img src="img/GitHub-Mark-32px.png" alt="Logo de GitHub" class="logo1" />
+    </a>© Powered by @fernandezmaxar</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
